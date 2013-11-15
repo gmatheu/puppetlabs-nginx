@@ -26,6 +26,8 @@ class nginx::params {
   $nx_keepalive_timeout  = 65
   $nx_tcp_nodelay        = on
   $nx_gzip               = on
+  $nx_types_hash_max_size = 1024
+  $nx_server_names_hash_bucket_size = 32
 
   $nx_proxy_redirect          = off
   $nx_proxy_set_header        = [
